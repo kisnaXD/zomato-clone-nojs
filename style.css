@@ -118,9 +118,9 @@ a {
     margin-top: 25px;
     width: 82%;
     height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    column-gap: 16px;
 }
 
 .food-section {
@@ -131,9 +131,9 @@ a {
 
 .box {
     height: 260px;
-    width: 31%;
     border-radius: 5px;
     border: 0.6px solid lightgray;
+    cursor: pointer;
 }
 
 .box-img {
@@ -142,6 +142,7 @@ a {
     height: 180px;
     width: 100%;
     background-size: cover;
+    cursor: pointer;
 }
 
 .boxheading {
@@ -190,17 +191,22 @@ a {
 
 .boxes {
     margin-top: 0px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 83%
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    column-gap: 10px;
+    width: 83%;
 }
 
 .box1 {
     height: 320px;
-    width: 24%;
     color: white;
     background-size: cover;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.box1-img {
+    cursor: pointer;
 }
 
 .boxcontent {
@@ -224,3 +230,230 @@ a {
     margin-left: 130px;
 }
 
+.nineBoxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+.container {
+    display: grid;
+    width: 83%;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px;
+}
+
+.cards {
+    height: 50px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards span {
+    font-weight: normal;
+}
+
+.zomapp-img {
+    background-image: url("assets/zomapp.png");
+    width: 410px;
+    height: 450px;
+    background-size: cover;
+}
+
+.zomapp {
+    height: 500px;
+    width: 100%;
+    background-color: #FFFBF7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.zomapp-content {
+    width: 410px;
+    height: 450px;
+}
+
+.zomapp-head {
+    font-size: 2.7rem;
+    padding-top: 20px;
+}
+
+.toggle-group {
+    display: flex;
+    gap: 1rem;
+}
+  
+.toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle input {
+    display: none; /* Hide the actual radio button */
+}
+
+.toggle-label {
+    padding-left: 1.8rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.toggle-label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+
+.toggle input:checked + .toggle-label::before {
+    border-color: #e74c3c; /* Red border */
+    background-color: #e74c3c; /* Red fill */
+}
+
+.toggle input:checked + .toggle-label {
+    color: #000; /* Darken text color */
+}
+
+.input-group {
+    height: 50px;
+}
+
+.inp {
+    height: 36px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+
+.butt {
+    margin-left: 10px;
+    height: 40px;
+    width: 150px;
+    background-color: #E23744;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.img-group {
+    display: flex;
+    width: 75%;
+}
+
+.gplay {
+    background-image: url('assets/gplay.png');
+    width: 100px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.aplay {
+    background-image: url('assets/appleapp.png');
+    width: 100px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+.zomfooter {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+
+.foot {
+    width: 83%
+}
+
+.selectors {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.panel1 {
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.black-logo {
+    background-image: url('assets/zomato_logo_black.png');
+    height: 30px;
+    width: 130px;
+    background-size: contain;
+}
+
+.countrySelect, .languageSelect {
+    background-color: transparent;
+    display: flex;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.countrySelect {
+    width: 35%
+}
+
+.languageSelect {
+    width: 45%;
+}
+
+.panel2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footerlist {
+    margin-top: 12px;
+    list-style-type: none;
+}
+
+.footeroption {
+    line-height: 1.8rem;
+    color: #696969;
+}
+
+.socials {
+    margin-top: 12px;
+}
+
+.eyecon {
+    font-size: 1.5rem;
+}
+
+.aplay1 {
+    background-image: url('assets/appleapp.png');
+    width: 100px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
