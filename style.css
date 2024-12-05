@@ -5,9 +5,8 @@
     font-family: Metrophobic, sans-serif;
 }
 
-.no-underline {
+a {
     text-decoration: none;
-    color: white;
 }
 
 .boldtext {
@@ -30,6 +29,10 @@
 
 .app {
     margin-left: 5px;
+}
+
+.no-underline {
+    color: white;
 }
 
 .navlist {
@@ -110,3 +113,114 @@
     font-size: 1rem;
     border: none;
 }
+
+.food-section1 {
+    margin-top: 25px;
+    width: 82%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.food-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 260px;
+    width: 31%;
+    border-radius: 5px;
+    border: 0.6px solid lightgray;
+}
+
+.box-img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+}
+
+.boxheading {
+    font-size: 1.35rem;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.boxpara {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.colhead {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.inDelhiNCR {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    margin-left: 130px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.redDelhi {
+    color: red;
+    display: flex;
+    align-items: center;
+}
+
+.allc {
+    margin-right: 4px;
+}
+
+.fourBoxes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.boxes {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 83%
+}
+
+.box1 {
+    height: 320px;
+    width: 24%;
+    color: white;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.boxcontent {
+    position: relative;
+    top: 270px;
+    left: 20px;
+    font-size: 1.1rem;
+}
+
+.places {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 3px;
+}
+
+.localitiesHead {
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
