@@ -1,0 +1,112 @@
+*{
+    border: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Metrophobic, sans-serif;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: white;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.getTheApp {
+    display: flex;
+    color: white;
+    font-size: 0.85rem;
+    align-items: center;
+}
+
+.app {
+    margin-left: 5px;
+}
+
+.navlist {
+    display: flex;
+    color: white;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 45%;
+    font-size: 1.25rem;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.hero-section {
+    background-image: url("assets/hero_image.png");
+    background-size: cover;
+    height: 500px;
+}
+
+.under-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.zomlogo {
+    background-image: url("assets/zomato_logo.png");
+    background-size: cover;
+    width: 310px;
+    height: 65px;
+}
+
+.zomtext {
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.red {
+    color: red;
+    font-size: 1.3rem;
+}
+
+.zomselect {
+    display: flex;
+    width: 70%;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.black {
+    color: black;
+}
+
+.cccccc {
+    color: #CCCCCC;
+}
+
+.searcher, .lines, .caret {
+    font-size: 1.35rem;
+}
+
+.selectAddress {
+    color: #949494;
+}
+
+.searchFood {
+    width: 65%;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+}
